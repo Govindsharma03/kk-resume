@@ -10,24 +10,24 @@ const Footer = () => {
       icon: <Linkedin size={20} />,
       href: personalInfo.linkedin,
       label: 'LinkedIn',
-      color: 'hover:text-cyan-400'
+      color: 'hover:text-purple-400'
     },
     {
       icon: <Mail size={20} />,
       href: `mailto:${personalInfo.email}`,
       label: 'Email',
-      color: 'hover:text-cyan-400'
+      color: 'hover:text-purple-400'
     },
     {
       icon: <Phone size={20} />,
       href: `tel:${personalInfo.phone}`,
       label: 'Phone',
-      color: 'hover:text-cyan-400'
+      color: 'hover:text-purple-400'
     }
   ];
 
   return (
-    <footer className="relative bg-black border-t border-cyan-500/20 mt-20">
+    <footer className="relative bg-black border-t border-purple-500/20 mt-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand Section */}
@@ -50,7 +50,7 @@ const Footer = () => {
                     const element = document.getElementById(link.toLowerCase());
                     element?.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 text-left text-sm"
+                  className="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-left text-sm"
                 >
                   {link}
                 </button>
@@ -77,11 +77,11 @@ const Footer = () => {
             </div>
             <div className="space-y-2 text-sm text-gray-400">
               <p className="flex items-center space-x-2">
-                <Mail size={16} className="text-cyan-400" />
+                <Mail size={16} className="text-purple-400" />
                 <span>{personalInfo.email}</span>
               </p>
               <p className="flex items-center space-x-2">
-                <Phone size={16} className="text-cyan-400" />
+                <Phone size={16} className="text-purple-400" />
                 <span>{personalInfo.phone}</span>
               </p>
             </div>
@@ -89,7 +89,7 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-cyan-500/20 pt-8">
+        <div className="border-t border-purple-500/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm text-center md:text-left">
               © {currentYear} Kaushiki Kumari. All rights reserved.
@@ -104,7 +104,7 @@ const Footer = () => {
       </div>
 
       {/* Background decoration */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent"></div>
     </footer>
   );
 };
